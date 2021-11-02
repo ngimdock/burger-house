@@ -16,6 +16,13 @@ module.exports = {
       transparent: 'transparent',
       current: 'currentColor',
 
+      'primary': '#ffc045',
+        'primary-hover': '#f5b029',
+      'secondary': '#3d2514',
+        'secondary-hover': '#231105',
+      'danger': '#bf2222',
+        'danger-hover': '#990e0e',
+
       black: colors.black,
       white: colors.white,
       gray: colors.coolGray,
