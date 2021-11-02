@@ -15,10 +15,10 @@ const Header = () => {
 					<p>Commandez votre repas en ligne</p>
 				</div>
 				<div className="mt-3">
-					<Button className="mr-2 shadow-lg">
+					<Button className="mr-3 tracking-widest shadow-lg">
 						inscription
 					</Button>
-					<Button theme="secondary" className="shadow-lg">
+					<Button theme="secondary" className="shadow-lg tracking-widest">
 						connexion
 					</Button>
 				</div>

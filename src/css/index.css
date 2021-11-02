@@ -11,3 +11,7 @@
 .textFontSecondary{
 	font-family: 'Andika New Basic', sans-serif;
 }
+
+.shadowTitleSecondary{
+	text-shadow: 3px 3px #F4EDCA;
+}
