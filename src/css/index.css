@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Andika+New+Basic&display=swap');
+
+.textFontPrimary{
+	font-family: 'Alfa Slab One', cursive;
+}
+
+.textFontSecondary{
+	font-family: 'Andika New Basic', sans-serif;
+}

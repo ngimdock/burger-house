@@ -30,12 +30,12 @@ const Button = (props) => {
 		padding = 'py-1 px-3'
 	}
 	else if(size === 'big'){
-		textSize = 'text-2xl'
+		textSize = 'text-1xl'
 		padding = 'py-3 px-6'
 	}
 	else{
 		textSize = 'text-base'
-		padding = 'py-2 px-5'
+		padding = 'py-3 px-6'
 	}
 
 	return(

@@ -5,14 +5,14 @@ import Button from '../../elements/Button'
 
 const Header = () => {
 	return(
-		<header className="flex item-center justify-between py-10 bg-gray-300">
-			<div className="bg-red-300 flex item-center">
+		<header className="relative z-10 flex item-center justify-between py-10">
+			<div className="flex item-center">
 				<img src={Logo} alt="Burger-house app" className="w-64"/>
 			</div>
 			<div>
 				<div className="flex w-full justify-around">
 					<img src={bag} alt="shop" className="w-5"/>
-					<p className="pl-1">Commandez votre repas en ligne</p>
+					<p>Commandez votre repas en ligne</p>
 				</div>
 				<div className="mt-3">
 					<Button className="mr-2 shadow-lg">
