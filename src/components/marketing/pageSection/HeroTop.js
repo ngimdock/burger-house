@@ -12,7 +12,7 @@ const HeroTop = () => {
         <Container>
           <Header />
 
-          <div className="relative w-full flex items-center text-secondary mt-32">
+          <div className="relative w-full flex items-center text-secondary mt-28">
             <div>
               <h1 className="textFontSecondary uppercase font-semibold">Le moment de gouter au gout des amburger</h1>
               <h2 className="textFontPrimary">
@@ -29,7 +29,7 @@ const HeroTop = () => {
               </Button>
             </div>
 
-            <img src={presentationImage} alt="burger house" className="w-7/12 absolute z-1 -top-64 right-0" />
+            <img src={presentationImage} alt="burger house" className="w-7/12 absolute z-0 -top-64 right-0" />
           </div>
         </Container>
       </div>
