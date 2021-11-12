@@ -3,6 +3,17 @@
 @tailwind utilities;
 
 @import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Andika+New+Basic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+
+body {
+  font-family: 'Roboto';
+  overflow-x: hidden;
+  @apply text-secondary;
+}
+
+p{
+	@apply mb-4 font-sans;
+}
 
 .textFontPrimary{
 	font-family: 'Alfa Slab One', cursive;

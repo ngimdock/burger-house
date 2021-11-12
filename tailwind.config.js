@@ -251,6 +251,7 @@ module.exports = {
       DEFAULT: '1',
     },
     fontFamily: {
+      'secondary': ['"Alfa Slab One"'],
       sans: [
         'ui-sans-serif',
         'system-ui',

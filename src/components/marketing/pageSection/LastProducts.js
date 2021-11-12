@@ -14,8 +14,8 @@ const LastProducts = () => {
 					<img src={imgProduct1} className="absolute top-0 left-0 z-1 rounded-md w-full h-full object-cover" alt="Un delicieux hamburger pose sur un bois" />
 					{/*<div className="absolute top-0 left-0 z-3 w-full h-full bg-gradient-to-r from-yellow-400 via-yellow-600 to-yellow-700 opacity-10"></div>*/}
 					<div className="relative z-3">
-						<span className="block font-bold text-lg">killer burger</span>
-						<span className="text-2xl font-black">burger le plus populaire</span>
+						<span className="block font-bold text-lg font-sans">killer burger</span>
+						<span className="text-2xl font-black font-sans">burger le plus populaire</span>
 					</div>
 				</div>
 
@@ -23,9 +23,9 @@ const LastProducts = () => {
 					<img src={imgProduct2} className="absolute top-0 left-0 z-1 rounded-md w-full h-full object-cover" alt="deux delicieux hamburger pose sur un bois" />
 					{/*<div className="absolute top-0 left-0 z-3 w-full h-full bg-gradient-to-r from-yellow-400 via-yellow-600 to-yellow-700 opacity-10"></div>*/}
 					<div className="relative z-3">
-						<span className="block font-bold text-lg">Island burger</span>
-						<span className="block text-2xl font-black">Plus de plaisir</span>
-						<span className="text-2xl font-black">plus de gout</span>
+						<span className="block font-bold text-lg font-sans">Island burger</span>
+						<span className="block text-2xl font-black font-sans">Plus de plaisir</span>
+						<span className="text-2xl font-black font-sans">plus de gout</span>
 					</div>
 				</div>
 
@@ -33,8 +33,8 @@ const LastProducts = () => {
 					<img src={imgProduct3} className="absolute top-0 left-0 z-1 rounded-md w-full h-full object-cover" alt="Les elements de fabrication d'un hamburger" />
 					{/*<div className="absolute top-0 left-0 z-3 w-full h-full bg-gradient-to-r from-yellow-400 via-yellow-600 to-yellow-700 opacity-10"></div>*/}
 					<div className="relative z-3">
-						<span className="block font-bold text-lg">Orlando's burger</span>
-						<span className="text-2xl font-black">frais & pimente</span>
+						<span className="block font-bold text-lg font-sans">Orlando's burger</span>
+						<span className="text-2xl font-black font-sans">frais & pimente</span>
 					</div>
 				</div>
 
