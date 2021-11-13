@@ -146,8 +146,8 @@
 
 .alice-carousel__dots {
   position: absolute;
-  bottom: 50px;
-  left: 63px;
+  bottom: 10px;
+  left: 40px;
   padding: 0;
   list-style: none;
   text-align: center; }

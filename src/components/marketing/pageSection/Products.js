@@ -16,7 +16,7 @@ const Products = () => {
 					Toujours les delicieux burger
 				</HeadingTitle>
 
-				<Heading theme="secondary">
+				<Heading theme="secondary" align="center" className="my-5">
 					choisissez et savourez
 				</Heading>
 
@@ -30,7 +30,7 @@ const Products = () => {
 			<div className="grid grid-cols-3 gap-x-1 w-full my-20">
 				<div className="text-center">
 					<img src={Product1} className="w-full" alt="un hambergur a la salade" />
-					<Heading variant="h3">
+					<Heading variant="h3" align="center" className="my-5">
 						Lorem Ipsum is simply
 					</Heading>
 					<p className="px-5">
@@ -38,14 +38,14 @@ const Products = () => {
 					the industry's standard dummy text ever since the 1500s
 					</p>
 
-					<Button size="medium" theme="danger" className="font-secondary mt-5">
+					<Button size="medium" theme="danger" className="font-secondary mt-2">
 						acheter
 					</Button>
 				</div>
 
 				<div className="text-center">
 					<img src={Product2} className="w-full" alt="un hambergur a la salade" />
-					<Heading variant="h3">
+					<Heading variant="h3" align="center" className="my-5">
 						Lorem Ipsum is simply
 					</Heading>
 					<p className="px-5">
@@ -53,14 +53,14 @@ const Products = () => {
 					the industry's standard dummy text ever since the 1500s
 					</p>
 
-					<Button size="medium" theme="danger" className="font-secondary mt-5">
+					<Button size="medium" theme="danger" className="font-secondary mt-2">
 						acheter
 					</Button>
 				</div>
 
 				<div className="text-center">
 					<img src={Product3} className="w-full" alt="un hambergur a la salade" />
-					<Heading variant="h3">
+					<Heading variant="h3" align="center" className="my-5">
 						Lorem Ipsum is simply
 					</Heading>
 					<p className="px-5">
@@ -68,7 +68,7 @@ const Products = () => {
 					the industry's standard dummy text ever since the 1500s
 					</p>
 
-					<Button size="medium" theme="danger" className="font-secondary mt-5">
+					<Button size="medium" theme="danger" className="font-secondary mt-2">
 						acheter
 					</Button>
 				</div>

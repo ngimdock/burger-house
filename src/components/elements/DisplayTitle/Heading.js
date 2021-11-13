@@ -6,7 +6,9 @@ const Heading = (props) => {
 		children,
 		variant,
 		theme,  //style
-		colorP
+		colorP,
+		align,
+		className
 
 	} = props
 
@@ -32,16 +34,25 @@ const Heading = (props) => {
 	switch(variant){
 		case 'h3':
 			return(
-				<div className="flex items-center justify-center my-5">
-					<h3 className={`text-2xl ${defaultClass} ${font} ${color}`}>
+				<div className={`flex justify-${[align]}`}>
+					<h3 className={`text-2xl ${defaultClass} ${font} ${color} ${className}`}>
 						{children}
 					</h3>
 				</div>
 			)
+
+		case 'h4':
+			return(
+				<div className={`flex justify-${[align]}`}>
+					<h4 className={`text-lg ${defaultClass} ${font} ${color} ${className}`}>
+						{children}
+					</h4>
+				</div>
+			)
 		default:
 			return(
-				<div className="flex items-center justify-center my-5">
-					<h2 className={`${theme === "secondary" ? "text-5xl" : "text-3xl"} ${defaultClass} ${font} ${color}`}>
+				<div className={`flex justify-${[align]}`}>
+					<h2 className={`${theme === "secondary" ? "text-5xl" : "text-3xl"} ${defaultClass} ${font} ${color} ${className}`}>
 						{children}
 					</h2>
 				</div>

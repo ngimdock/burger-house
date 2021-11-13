@@ -6,50 +6,87 @@ import '../../../css/carousel.css'
 import Container from '../../elements/Container'
 import Heading from '../../elements/DisplayTitle/Heading'
 import imgEvent from '../../../medias/images/photos/demi-finale.jpg'
-import burger1 from '../../../medias/images/products/burger1.jpg'
+import imgEvent2 from '../../../medias/images/photos/event2.jpeg'
+import imgEvent3 from '../../../medias/images/photos/event3.jpeg'
 
-const handleDragStart = (e) => e.preventDefault();
+
+const Slide = (props) => {
+
+	const{
+		children,
+		img,
+		subTitle,
+		title
+	} = props
+
+	console.log(children)
+
+	return(
+		<div className="grid grid-cols-2 w-full p-5">
+	  	<div className="p-5">
+	  		<Heading variant="h4">
+	  			{subTitle}
+	  		</Heading>
+	  		<Heading variant="h3" theme="secondary" className="my-2">
+	  			{title}
+	  		</Heading>
+	  		<p className="leading-6 mt-3 text-lg tracking-wide leading-relaxed text-gray-600">
+	  			{children}
+	  		</p>
+	  	</div>
+
+	  	<div className="relative w-full h-full">
+	  		<img src={img} alt="image carousel" className="absolute top-0 left-0 h-full w-full object-cover object-center" />
+	  	</div>
+	  </div>
+	)
+}
+
 
 const Event = () => {
 
-	const items = [
-	  <div className="flex items-center font-secondary ">
-	  	<div className="p-3">
-	  		<Heading>
-	  			vivez la demi-finale chez nous
-	  		</Heading>
-		  	<p>
-		  		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sagittis, est in finibus porttitor, dolor nunc elementum magna, nec laoreet risus massa non arcu. In efficitur dapibus rutrum. Nunc lobortis lectus lorem, a semper diam condimentum in. 
-		  	</p>
-	  	</div>
-	  	<img src={burger1} className="block w-1/2 h-full" onDragStart={handleDragStart} />
-	  </div>,
+	const handleDragStart = (e) => e.preventDefault();
 
-	  <div className="flex items-center font-secondary h-full">
-	  	<div className="p-3">
-	  		<Heading>
-	  			vivez la demi-finale chez nous
-	  		</Heading>
-		  	<p>
-		  		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sagittis, est in finibus porttitor, dolor nunc elementum magna, nec laoreet risus massa non arcu. In efficitur dapibus rutrum. Nunc lobortis lectus lorem, a semper diam condimentum in. 
-		  	</p>
-	  	</div>
-	  	<div>
-	  		<img src={burger1} className="block w-1/2 h-full" onDragStart={handleDragStart} />
-	  	</div>
-	  </div>
+	const items = [
+	  <Slide 
+	  	img={imgEvent}
+	  	subTitle="évennement à venir"
+	  	title="vivez la demi-finale"
+	  >
+	  	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sed rhoncus turpis, 
+	  	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sed rhoncus turpis, 
+	  	at aliquam diam. Integer libero leo, rhoncus sit amet sagittis imperdiet, 
+	  </Slide>,
+	  <Slide 
+	  	img={imgEvent2}
+	  	subTitle="Ce n'est pas une blague !"
+	  	title="Un burger offert pour un but des blue"
+	  >
+	  	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sed rhoncus turpis, 
+	  	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sed rhoncus turpis, 
+	  	at aliquam diam. Integer libero leo, rhoncus sit amet sagittis imperdiet, 
+	  </Slide>,
+	  <Slide 
+	  	img={imgEvent3}
+	  	subTitle="Il faut bien manger avant les match"
+	  	title="Notre restaurant vous ouvre ses portes"
+	  >
+	  	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sed rhoncus turpis, 
+	  	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sed rhoncus turpis, 
+	  	at aliquam diam. Integer libero leo, rhoncus sit amet sagittis imperdiet, 
+	  </Slide>
 	];
 
 	return (
 		<Container>
-		<div className="shadow-2xl w-full h-96 my-20 p-10">
+		<div className="shadow-2xl w-full my-20">
 			<AliceCarousel 
 				mouseTracking
 				items={items}
-				// autoPlay
-				// infinite
-				// autoPlayInterval="4000"
-				// animationType="fadeout"
+				autoPlay
+				infinite
+				autoPlayInterval="4000"
+				animationType="fadeout"
 				disableButtonsControls={true}
 			/>
 		</div>
