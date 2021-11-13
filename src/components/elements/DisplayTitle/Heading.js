@@ -10,7 +10,7 @@ const Heading = (props) => {
 
 	} = props
 
-	const defaultClass = "my-5 uppercase"
+	const defaultClass = "uppercase"
 	let font, color
 
 	switch(theme){
