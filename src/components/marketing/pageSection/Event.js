@@ -16,10 +16,10 @@ const Slide = (props) => {
 		children,
 		img,
 		subTitle,
-		title
+		title,
+		alt
 	} = props
 
-	console.log(children)
 
 	return(
 		<div className="grid grid-cols-2 w-full p-5">
@@ -36,7 +36,7 @@ const Slide = (props) => {
 	  	</div>
 
 	  	<div className="relative w-full h-full">
-	  		<img src={img} alt="image carousel" className="absolute top-0 left-0 h-full w-full object-cover object-center" />
+	  		<img src={img} alt={alt} className="absolute top-0 left-0 h-full w-full object-cover object-center" />
 	  	</div>
 	  </div>
 	)
@@ -45,13 +45,12 @@ const Slide = (props) => {
 
 const Event = () => {
 
-	const handleDragStart = (e) => e.preventDefault();
-
 	const items = [
 	  <Slide 
 	  	img={imgEvent}
 	  	subTitle="évennement à venir"
 	  	title="vivez la demi-finale"
+	  	alt="demi-finale en france"
 	  >
 	  	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sed rhoncus turpis, 
 	  	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sed rhoncus turpis, 
@@ -61,6 +60,7 @@ const Event = () => {
 	  	img={imgEvent2}
 	  	subTitle="Ce n'est pas une blague !"
 	  	title="Un burger offert pour un but des blue"
+	  	alt="votre surprise"
 	  >
 	  	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sed rhoncus turpis, 
 	  	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sed rhoncus turpis, 
@@ -70,6 +70,7 @@ const Event = () => {
 	  	img={imgEvent3}
 	  	subTitle="Il faut bien manger avant les match"
 	  	title="Notre restaurant vous ouvre ses portes"
+	  	alt="Notre restorant"
 	  >
 	  	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sed rhoncus turpis, 
 	  	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sed rhoncus turpis, 
@@ -79,17 +80,17 @@ const Event = () => {
 
 	return (
 		<Container>
-		<div className="shadow-2xl w-full my-20">
-			<AliceCarousel 
-				mouseTracking
-				items={items}
-				autoPlay
-				infinite
-				autoPlayInterval="4000"
-				animationType="fadeout"
-				disableButtonsControls={true}
-			/>
-		</div>
+			<div className="shadow-2xl my-20">
+				<AliceCarousel 
+					mouseTracking
+					items={items}
+					autoPlay
+					infinite
+					autoPlayInterval="4000"
+					animationType="fadeout"
+					disableButtonsControls={true}
+				/>
+			</div>
 		</Container>
 	)
 }
