@@ -21,6 +21,10 @@ body {
   @apply text-secondary;
 }
 
+footer{
+	font-family: 'Roboto';
+}
+
 p{
 	@apply mb-4 font-sans;
 }
