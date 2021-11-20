@@ -14,11 +14,11 @@ const Header = () => {
 			<div>
 				<div className="hidden md:flex flex items-center  justify-end">
 					<img src={bag} alt="shop" className="w-5 h-5 mr-1"/>
-					<span>Commandez votre repas en ligne</span>
+					<span className="font-sans">Commandez votre repas en ligne</span>
 				</div>
 
 				<div className="md:mt-5">
-					<Button className="mr-3 tracking-widest shadow-lg">
+					<Button className="mr-1 md:mr-3 tracking-widest shadow-lg">
 						inscription
 					</Button>
 					<Button theme="secondary" className="shadow-lg tracking-widest">

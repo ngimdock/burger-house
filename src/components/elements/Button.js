@@ -21,8 +21,8 @@ const Button = (props) => {
 		padding = 'py-1 px-3'
 	}
 	else if(size === 'big'){
-		textSize = 'text-base'
-		padding = 'py-3 px-6'
+		textSize = 'text-sm md:text-base'
+		padding = 'py-4  px-4 md:px-6'
 	}
 	else{
 		textSize = 'text-sm md:text-base'
@@ -30,7 +30,7 @@ const Button = (props) => {
 	}
 
 	return(
-		<button className={`${className} ${backgroundColor} ${padding} ${textSize} text-white uppercase  font-sans font-medium`}>
+		<button className={`${className} ${backgroundColor} ${padding} ${textSize} tracking-tighter md:tracking-normal text-white uppercase  font-sans font-medium`}>
 			{children}
 		</button>
 	)
