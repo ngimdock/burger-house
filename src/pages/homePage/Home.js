@@ -9,6 +9,7 @@ import Footer from '../../components/marketing/pageSection/Footer';
 const homePage = () => {
 	return (
 		<>
+		{/*<div className="w-full h-32 bg-red-500 sm:bg-green-500 md:bg-blue-500 lg:bg-indigo-500 xl:bg-pink-500"></div>*/}
 			<HeroTop />
 			<LastProducts />
 			<Products />

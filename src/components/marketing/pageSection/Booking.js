@@ -12,7 +12,7 @@ const Booking = () => {
 			<div className="relative w-full my-20">
 				<img src={Burger}  className="absolute -top-20 -left-36" alt="" />
 				<img src={SaucePimente} className="absolute bottom-0 left-0" alt="une sauce pimente" />
-				<img src={AssietteBurger} className="absolute -bottom-44 -right-96" alt="une assiette hamberger frits" />
+				<img src={AssietteBurger} className="absolute -bottom-44 -right-96 hidden lg:block" alt="une assiette hamberger frits" />
 
 				<div className="max-w-3xl mx-auto px-5 py-20">
 					<Heading variant="h3" align="center">

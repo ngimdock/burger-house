@@ -25,12 +25,12 @@ const Button = (props) => {
 		padding = 'py-3 px-6'
 	}
 	else{
-		textSize = 'text-base'
-		padding = 'py-3 px-6'
+		textSize = 'text-sm md:text-base'
+		padding = 'py-2 md:py-3 px-4 md:px-6'
 	}
 
 	return(
-		<button className={`${className} ${backgroundColor} ${padding} ${textSize} text-white uppercase  font-medium`}>
+		<button className={`${className} ${backgroundColor} ${padding} ${textSize} text-white uppercase  font-sans font-medium`}>
 			{children}
 		</button>
 	)

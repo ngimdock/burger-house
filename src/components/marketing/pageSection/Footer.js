@@ -1,13 +1,14 @@
 import React from 'react'
 import Container from '../../elements/Container'
 import bgFooter from '../../../medias/images/background/bg-footer.jpg'
-import { FaBeer } from 'react-icons/fa';
 import { MdEmail } from 'react-icons/md';
 import { GiPositionMarker } from "react-icons/gi";
-import { BsFacebook } from "react-icons/bs";
-import { AiFillInstagram, AiFillTwitterCircle } from "react-icons/ai";
-import { IoLogoWhatsapp } from "react-icons/io";
 
+import logoWhite from '../../../medias/svg/Logo-burger-house-white.svg';
+import instagram from '../../../medias/svg/instagram-brands.svg';
+import facebook from '../../../medias/svg/facebook-f-brands.svg';
+import twitter from '../../../medias/svg/twitter-brands.svg';
+import whatsap from '../../../medias/svg/whatsapp-brands.svg';
 
 
 const Footer = () => {
@@ -18,13 +19,13 @@ const Footer = () => {
 			<img src={bgFooter} alt="des burger sur le planche" className="absolute top-0 left-0 w-full h-full z-0" />
 			<div className="relative grid grid-cols-2 pt-10 z-10">
 				<div className="">
-					Logo
-
+					<img src={logoWhite} alt="burger house" className="my-10 w-2/3" />
 					<p>
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas quis urna non nunc 
 						facilisis pharetra. Etiam sit amet nibh nisl. Vivamus nulla leo, dapibus ut ultricies ut, 
 						vehicula vitae nisl. Sed tortor ligula, viverra non vestibulum vitae, sagittis consectetur turpis. 
 						Mauris quam velit, malesuada eget lacus nec, sodales euismod lorem. 
+						<img src={facebook} alt="facebook" className="w-5" />
 					</p>
 				</div>
 				<div className="flex justify-center items-end pb-5">
@@ -46,11 +47,30 @@ const Footer = () => {
 					<p>@Burger house 2021 tout droit reserve</p>
 				</div>
 				<div>
-					<ul className="flex">
-						<li><AiFillInstagram className=" text-2xl hover:text-primary"/></li>
-						<li><BsFacebook className="ml-4 mr-4 text-2xl hover:text-primary"/></li>
-						<li><AiFillTwitterCircle className="mr-4 text-2xl hover:text-primary"/></li>
-						<li><IoLogoWhatsapp className=" text-2xl hover:text-primary"/></li>
+					<ul className="flex space-x-4">
+						<a href="https://www.instagram.com/ngimdock/" target="_blank" rel="noreferrer">
+							<li className="w-8 h-8 flex justify-center items-center rounded-full bg-white hover:bg-primary">
+								<img src={instagram} alt="instagram z-10" className="w-5" />
+							</li>
+						</a>
+
+						<a href="https://www.facebook.com/ngimdock" target="_blank" rel="noreferrer">
+							<li className="w-8 h-8 flex justify-center items-center rounded-full bg-white hover:bg-primary">
+								<img src={facebook} alt="facebook " className="w-5" />
+							</li>
+						</a>
+
+						<a href="https://twitter.com/NZemfack" target="_blank" rel="noreferrer">
+							<li className="w-8 h-8 flex justify-center items-center rounded-full bg-white hover:bg-primary">
+								<img src={twitter} alt="twiter " className="w-5" />
+							</li>
+						</a>
+
+						<a href="https://www.linkedin.com/in/ngimdock-zemfack/" target="_blank" rel="noreferrer">
+							<li className="w-8 h-8 flex justify-center items-center rounded-full bg-white hover:bg-primary">
+								<img src={whatsap} alt="whatsap " className="w-5" />
+							</li>
+						</a>
 					</ul>
 				</div>
 			</div>

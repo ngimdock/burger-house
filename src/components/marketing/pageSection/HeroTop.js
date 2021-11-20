@@ -12,13 +12,14 @@ const HeroTop = () => {
         <Container>
           <Header />
 
-          <div className="relative w-full flex items-center text-secondary mt-28 ">
+          <div className="relative z-10 text-secondary uppercase">
+            {/*<img src={presentationImage} alt="burger house" className="w-7/12 absolute z-0 -top-64 right-0" />*/}
             <div>
-              <h1 className="textFontSecondary uppercase font-semibold">Le moment de gouter au gout des amburger</h1>
-              <h2 className="textFontPrimary shadowTitleSecondary">
-                <span className="text-8xl bold block mt-6">BURGER</span>
+              <h1 className="font-sans uppercase font-medium">Le moment de gouter au gout des amburger</h1>
+              <h2 className="font-secondary shadowTitleSecondary">
+                <span className="text-7xl md:text-8xl bold block mt-6">BURGER</span>
                 <span className="text-6xl bold">HOUSE</span>
-                <span className="text-4xl bold">Click<span className="text-danger">&</span>Collect</span>
+                <span className="text-4xl bold sm:ml-4 block sm:inline">Click <span className="text-danger">&</span> Collect</span>
               </h2>
               <Button
                 theme="secondary"
@@ -28,9 +29,8 @@ const HeroTop = () => {
                 Creer mon compte
               </Button>
             </div>
-
-            <img src={presentationImage} alt="burger house" className="w-7/12 absolute z-0 -top-64 right-0" />
-            <div className="w-40 h-40 rounded-full bg-danger absolute -bottom-32 right-96 p-3 flex item-center justify-center">
+            
+           {/* <div className="w-40 h-40 rounded-full bg-danger absolute -bottom-32 right-96 p-3 flex item-center justify-center">
               <div className="w-full h-full text-white rounded-full p-3 border-dashed border-2 border-white flex item-center justify-center">
                 <div className="text-center  my-auto">
                   <span className="block font-bold">
@@ -39,8 +39,10 @@ const HeroTop = () => {
                   <span className="font-semibold uppercase text-sm tracking-widest">seulement</span>
                 </div>
               </div>
-            </div>
+            </div>*/}
           </div>
+
+
         </Container>
       </div>
     </div>
