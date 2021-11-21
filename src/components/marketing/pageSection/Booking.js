@@ -18,7 +18,7 @@ const Booking = () => {
 					<Heading variant="h3" align="center">
 						réservation
 					</Heading>
-					<Heading theme="secondary" align="center" className="text-2xl my-5">
+					<Heading theme="secondary" align="center" className="text-2xl my-5 text-center">
 						Réservé votre table
 					</Heading>
 					<form className="grid grid-cols-2 grid-rows-3 gap-x-6 gap-y-4 mt-20">

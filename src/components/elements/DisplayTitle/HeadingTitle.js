@@ -7,7 +7,7 @@ const HeadingTitle = (props) => {
 		variant
 	} = props
 
-	const defaultClass = "px-7 py-3 bg-primary text-secondary font-bold uppercase inline-block"
+	const defaultClass = "px-7 py-3 bg-primary font-secondary font-thin uppercase inline-block text-center"
 
 	switch(variant){
 		case 'h3':

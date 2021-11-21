@@ -52,7 +52,7 @@ const Heading = (props) => {
 		default:
 			return(
 				<div className={`flex justify-${[align]}`}>
-					<h2 className={`${theme === "secondary" ? "text-5xl" : "text-3xl"} ${defaultClass} ${font} ${color} ${className}`}>
+					<h2 className={`${theme === "secondary" ? "text-3xl lg:text-5xl" : "text-3xl"} ${defaultClass} ${font} ${color} ${className}`}>
 						{children}
 					</h2>
 				</div>
