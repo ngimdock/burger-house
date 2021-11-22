@@ -10,9 +10,9 @@ const Booking = () => {
 	return(
 		<Container>
 			<div className="relative w-full my-20">
-				<img src={Burger}  className="absolute -top-20 -left-36" alt="" />
-				<img src={SaucePimente} className="absolute bottom-0 left-0" alt="une sauce pimente" />
-				<img src={AssietteBurger} className="absolute -bottom-44 -right-96 hidden lg:block" alt="une assiette hamberger frits" />
+				<img src={Burger}  className="hidden lg:block absolute -top-20 -left-36" alt="" />
+				<img src={SaucePimente} className="hidden lg:block absolute bottom-0 left-0" alt="une sauce pimente" />
+				<img src={AssietteBurger} className="hidden lg:block absolute -bottom-44 -right-96 hidden lg:block" alt="une assiette hamberger frits" />
 
 				<div className="max-w-3xl mx-auto px-5 py-20">
 					<Heading variant="h3" align="center">
@@ -21,7 +21,7 @@ const Booking = () => {
 					<Heading theme="secondary" align="center" className="text-2xl my-5 text-center">
 						Réservé votre table
 					</Heading>
-					<form className="grid grid-cols-2 grid-rows-3 gap-x-6 gap-y-4 mt-20">
+					<form className="grid md:grid-cols-2 md:grid-rows-3 gap-x-6 gap-y-4 mt-5 lg:mt-20">
 						<div>
 							<label htmlFor="name">Nom</label>
 							<input

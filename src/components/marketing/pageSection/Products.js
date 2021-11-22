@@ -28,7 +28,7 @@ const Products = () => {
 				</p>
 
 			</Container>
-			<div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5 gap-5 md:gap-2 lg:gap-1 w-full my-20 px-5 md:px-0">
+			<div className="grid md:grid-cols-2 lg:grid-cols-3 gap-12 md:gap-5 lg:gap-2 w-full my-20 px-5 md:px-0">
 				<div className="text-center m-auto sm:w-2/3 md:w-full">
 					<img src={Product1} className="w-full" alt="un hambergur a la salade" />
 					<Heading variant="h3" align="center" className="my-5">
@@ -60,7 +60,7 @@ const Products = () => {
 				</div>
 
 
-				<div className="text-center m-auto sm:w-2/3 md:w-full">
+				<div className="text-center m-auto sm:w-2/3 md:w-full md:pt-5 lg:pt-0">
 					<img src={Product3} className="w-full" alt="un hambergur a la salade" />
 					<Heading variant="h3" align="center" className="my-5">
 						Lorem Ipsum is simply
@@ -75,7 +75,7 @@ const Products = () => {
 					</Button>
 				</div>
 
-				<div className="hidden md:block lg:hidden text-center m-auto sm:w-2/3 md:w-full">
+				<div className="hidden md:block lg:hidden text-center m-auto sm:w-2/3 md:w-full md:pt-5 lg:pt-0">
 					<img src={Product4} className="w-full" alt="un hambergur a la salade" />
 					<Heading variant="h3" align="center" className="my-5">
 						Lorem Ipsum is simply

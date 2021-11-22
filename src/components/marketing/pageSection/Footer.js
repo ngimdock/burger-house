@@ -8,18 +8,18 @@ import logoWhite from '../../../medias/svg/Logo-burger-house-white.svg';
 import instagram from '../../../medias/svg/instagram-brands.svg';
 import facebook from '../../../medias/svg/facebook-f-brands.svg';
 import twitter from '../../../medias/svg/twitter-brands.svg';
-import whatsap from '../../../medias/svg/whatsapp-brands.svg';
+import linkedin from '../../../medias/svg/linkedin-in-brands.svg';
 
 
 const Footer = () => {
 
 	return(
 		<Container >
-		<footer className="relative bg-black w-full text-white px-10 pt-10 pb-5 font-sans">
+		<footer className="relative bg-black w-full text-white px-5 md:px-10 pt-10 pb-5 font-sans">
 			<img src={bgFooter} alt="des burger sur le planche" className="absolute top-0 left-0 w-full h-full z-0" />
-			<div className="relative grid grid-cols-2 pt-10 z-10">
+			<div className="relative grid md:grid-cols-2 lg:pt-10 z-10">
 				<div className="">
-					<img src={logoWhite} alt="burger house" className="my-10 w-2/3" />
+					<img src={logoWhite} alt="burger house" className="mb-5 md:my-10 w-2/3" />
 					<p>
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas quis urna non nunc 
 						facilisis pharetra. Etiam sit amet nibh nisl. Vivamus nulla leo, dapibus ut ultricies ut, 
@@ -32,17 +32,17 @@ const Footer = () => {
 					<ul>
 						<li className="flex items-center my-2">
 							<GiPositionMarker className="text-3xl" />
-							<span className="ml-2 uppercase font-extrabold text-lg traking-tighter">15 place Bellecours, 6900 Lion</span>
+							<span className="ml-2 uppercase font-extrabold text-sm md:text-lg traking-tighter">15 place Bellecours, 6900 Lion</span>
 						</li>
 						<li className="flex items-center  my-2">
 							<MdEmail className="text-3xl"/>
-							<span className="ml-2 uppercase font-extrabold text-lg traking-tighter">15 place Bellecours, 6900 Lion</span>
+							<span className="ml-2 uppercase font-extrabold text-sm md:text-lg traking-tighter">15 place Bellecours, 6900 Lion</span>
 						</li>
 					</ul>
 				</div>
 			</div>
 
-			<div className="relative flex justify-between mt-20 z-10">
+			<div className="relative md:flex justify-between mt-5 md:mt-20 z-10">
 				<div>
 					<p>@Burger house 2021 tout droit reserve</p>
 				</div>
@@ -68,7 +68,7 @@ const Footer = () => {
 
 						<a href="https://www.linkedin.com/in/ngimdock-zemfack/" target="_blank" rel="noreferrer">
 							<li className="w-8 h-8 flex justify-center items-center rounded-full bg-white hover:bg-primary">
-								<img src={whatsap} alt="whatsap " className="w-5" />
+								<img src={linkedin} alt="whatsap " className="w-5" />
 							</li>
 						</a>
 					</ul>

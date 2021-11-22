@@ -22,8 +22,8 @@ const Slide = (props) => {
 
 
 	return(
-		<div className="grid grid-cols-2 w-full p-5">
-	  	<div className="p-5">
+		<div className="grid md:grid-cols-2 w-full p-5">
+	  	<div className="md:p-5">
 	  		<Heading variant="h4">
 	  			{subTitle}
 	  		</Heading>
@@ -35,7 +35,7 @@ const Slide = (props) => {
 	  		</p>
 	  	</div>
 
-	  	<div className="relative w-full h-full">
+	  	<div className="relative w-full h-72 md:h-full">
 	  		<img src={img} alt={alt} className="absolute top-0 left-0 h-full w-full object-cover object-center" />
 	  	</div>
 	  </div>
@@ -54,7 +54,7 @@ const Event = () => {
 	  >
 	  	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sed rhoncus turpis, 
 	  	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sed rhoncus turpis, 
-	  	at aliquam diam. Integer libero leo, rhoncus sit amet sagittis imperdiet, 
+	  	at aliquam diam. Integer libero leo, rhoncus sit amet sagittis imperdiet
 	  </Slide>,
 	  <Slide 
 	  	img={imgEvent2}
@@ -64,7 +64,7 @@ const Event = () => {
 	  >
 	  	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sed rhoncus turpis, 
 	  	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sed rhoncus turpis, 
-	  	at aliquam diam. Integer libero leo, rhoncus sit amet sagittis imperdiet, 
+	  	at aliquam diam. Integer libero leo, rhoncus sit amet sagittis imperdiet
 	  </Slide>,
 	  <Slide 
 	  	img={imgEvent3}
@@ -74,7 +74,7 @@ const Event = () => {
 	  >
 	  	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sed rhoncus turpis, 
 	  	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sed rhoncus turpis, 
-	  	at aliquam diam. Integer libero leo, rhoncus sit amet sagittis imperdiet, 
+	  	at aliquam diam. Integer libero leo, rhoncus sit amet sagittis imperdiet
 	  </Slide>
 	];
 
